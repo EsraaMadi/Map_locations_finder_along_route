@@ -108,7 +108,7 @@ def init_map(api_key=api_key, latitude=0, longitude=0, zoom=14, layer = "basic",
         attr = 'TomTom')
     
     # add get latitude and longitude feature to our map
-    folium.LatLngPopup().add_to(TomTom_map)
+    #folium.LatLngPopup().add_to(TomTom_map)
     
     return TomTom_map
 
