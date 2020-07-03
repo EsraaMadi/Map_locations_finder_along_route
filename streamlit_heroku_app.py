@@ -44,7 +44,7 @@ def main():
 
     # initialize a map and update progress bar
     map_ = init_map(latitude=39.043701171875, longitude=-77.47419738769531, layer = "hybrid")
-    map_box = st.markdown(map_._repr_html_(), unsafe_allow_html=True)
+    st.markdown(map_._repr_html_(), unsafe_allow_html=True)
 
 
 #----------------------------------------------------------------------------#
