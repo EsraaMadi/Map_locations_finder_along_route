@@ -8,6 +8,7 @@ import pickle
 import json
 from colour import Color
 import os
+from IPython.display import display
 #----------------------------------------------------------------------------#
 
 ### Define some paramters ###
@@ -393,7 +394,7 @@ def main():
     my_location, my_region_code, my_region = get_my_location(weights_warning, progress_bar)
 
     # initialize a map and update progress bar
-    map_ = init_map(latitude=my_location[0], longitude=my_location[1], layer = "hybrid")
+    map_ = display(init_map(latitude=my_location[0], longitude=my_location[1], layer = "hybrid"))
     progress_bar.progress(.8)
     map_box = st.markdown(map_._repr_html_(), unsafe_allow_html=True)
 
