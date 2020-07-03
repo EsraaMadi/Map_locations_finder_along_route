@@ -1,6 +1,3 @@
-# run this script
-# streamlit run streamlit_app.py
-
 import folium
 from folium.plugins import BeautifyIcon
 import streamlit as st
@@ -29,11 +26,7 @@ with open('help_files/categories.pkl', 'rb') as f:
     places_cat_dict = pickle.load(f)
 places_cat_en = list(places_cat_dict.name.values)
 places_cat_ar  = list(places_cat_dict.name_ar.values)
-    
-# places_cat_en = [' coffee shop', 'bank', ' fast food', 'ambulance unit',' beauty salon',\
-#                  ' cinema', ' clinic', ' clothing shop',' dentist' ]
-# places_cat_ar = ["كوفي شوب" , "بنك" , "وجبات سريعة" , "وحدة إسعاف", "صالون تجميل" , \
-#                   "سينما" , "عيادة" , "محل ملابس" , "طبيب أسنان"]
+
 
 # app languages
 languages_lst = ["En", "العربية"]
@@ -154,7 +147,7 @@ def get_my_location(weights_warning, progress_bar):
     geo_request = requests.get(f"http://api.ipstack.com/{my_ip}?access_key={api_key_loc}")
     geo_data = geo_request.json()
     
-    return [float(geo_data['latitude']), float(geo_data['longitude'])], int(geo_data['region_code']), geo_data['city']
+    return [float(geo_data['latitude']), float(geo_data['longitude'])], geo_data['region_code'], geo_data['city']
 
 #@st.cache(suppress_st_warning=True, hash_funcs={folium.Map: hash})
 def draw_route(points):
