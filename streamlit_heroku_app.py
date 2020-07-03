@@ -21,8 +21,6 @@ with open('help_files/sa_regions.pkl', 'rb') as f:
 
 
 #  TomTom API key Setting
-# with open('help_files/tomtomapikey.txt') as f:
-#     api_key = f.readline()
 api_key = os.environ.get('tomtomapikey')
 
 # places category 
@@ -141,8 +139,8 @@ def get_my_location(weights_warning, progress_bar):
     """
     A function to get my latitude, longitude, region code and city name
     """
-    with open('help_files/ipstackkey.txt') as f:
-        api_key_loc = f.readline()
+    
+    api_key_loc = os.environ.get('ipstackkey')
     
     # step 1: get my ip 
     ip_request = requests.get('https://get.geojs.io/v1/ip.json')
