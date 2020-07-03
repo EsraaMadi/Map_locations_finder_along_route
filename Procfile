@@ -1,1 +1,1 @@
-web: sh create_config.sh && streamlit run streamlit_app.py
+web: sh create_config.sh && streamlit run streamlit_heroku_app.py
