@@ -8,6 +8,7 @@ import pickle
 import json
 from colour import Color
 import os
+from IPython.display import display
 #----------------------------------------------------------------------------#
 
 ### Define some paramters ###
