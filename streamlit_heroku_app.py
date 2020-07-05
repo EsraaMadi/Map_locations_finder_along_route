@@ -399,7 +399,7 @@ def main():
     #map_box = st.markdown(map_._repr_html_(), unsafe_allow_html=True)
     #map_box = st.write(map_._repr_html_(), unsafe_allow_html=True)
     map_.save("test.html")
-    st.markdown('<iframe src="/test.html"> </iframe>')
+    st.markdown('<iframe src="test.html"> </iframe>')
 
     # remove progress bar
     weights_warning.empty()
