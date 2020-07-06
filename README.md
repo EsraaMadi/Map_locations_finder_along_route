@@ -74,7 +74,7 @@ In this project, we will implement and provide following services:
 
 
 <p align="center">
-  <img src="assets/category_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;"> OR  <img src="assets/category_en.png" width="40%">
+  <img src="assets/category_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;">   <img src="assets/category_en.png" width="40%">
 </p>
 
 <br>
@@ -84,7 +84,7 @@ In this project, we will implement and provide following services:
 
 
 <p align="center">
-  <img src="assets/lat_lon_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;"> OR  <img src="assets/lat_lon_en.png" width="40%">
+  <img src="assets/lat_lon_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;">   <img src="assets/lat_lon_en.png" width="40%">
 </p>
 <br>
 
@@ -104,7 +104,7 @@ In this project, we will implement and provide following services:
 
 
 <p align="center">
-  <img src="assets/detour_time_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;"> OR  <img src="assets/detour_time_en.png" width="40%">
+  <img src="assets/detour_time_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;">   <img src="assets/detour_time_en.png" width="40%">
 </p>
 <br>
 
@@ -114,7 +114,7 @@ In this project, we will implement and provide following services:
 
 
 <p align="center">
-  <img src="assets/route_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;"> OR  <img src="assets/route_en.png" width="40%">
+  <img src="assets/route_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;">   <img src="assets/route_en.png" width="40%">
 </p>
 <br>
 
@@ -145,7 +145,7 @@ By activating `yala` checkbox, the app will show the following information:
 
 
   <p align="center">
-    <img src="assets/res_side_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;"> OR  <img src="assets/res_side_en.png" width="40%">
+    <img src="assets/res_side_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;">   <img src="assets/res_side_en.png" width="40%">
   </p>
 <br>
 
@@ -161,10 +161,10 @@ pip3 install -r requirements.txt
 
 ### Built With
 
-- [IBM Watson python lib](https://pypi.org/project/ibm-watson/) - Library to understand emotions and communication style in text.
-- [Elasticsearch](https://www.elastic.co/products/elasticsearch) - Open-source, RESTful, distributed search and analytics engine
-- [Flask](https://flask-doc.readthedocs.io/en/latest/)  - Web framework, a third-party Python library used for developing web applications.
-- [Plotly](https://pypi.org/project/plotly/) - Open-source visualization libraries for R, Python, and JavaScript.
+- [TomTom API](https://developer.tomtom.com/) - Cross platform REST APIs and SDKs provide geographical data.
+- [Streamlit](https://docs.streamlit.io/en/stable/#:~:text=Streamlit%20is%20an%20open%2Dsource,with%20streamlit%20run%20%5Bfilename%5D%20.) - Open-source Python library that makes it easy to build beautiful custom web-apps for machine learning and data science.
+- [Folium](https://python-visualization.github.io/folium/) - Open-source library to visualize data that’s been manipulated in Python on an interactive leaflet map.
+
 
 ### How Run The Services
 1. Clone repo

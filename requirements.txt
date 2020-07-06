@@ -1,0 +1,7 @@
+numpy==1.18.1
+pandas==0.25.3
+streamlit==0.60.0
+folium==0.10.0
+requests==2.23.0
+beautifulsoup4==4.6.0
+colour==0.1.1
