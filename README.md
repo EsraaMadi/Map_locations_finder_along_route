@@ -35,7 +35,7 @@ Using TomTom maps we will provide app's users a pretty map that shows his curren
 <br>
 
 ## App Components / Services Types:
-In this project, we are going to implement and provide following services:
+In this project, we will implement and provide following services:
 1. App languages:
   - Arabic
   - English
@@ -73,8 +73,14 @@ In this project, we are going to implement and provide following services:
   >- Mosque
 
 <p align="center">
-  <img src="assets/category.png" width="50%">
+  <img src="assets/category_ar.png" width="50%"><img src="assets/category_en.png" width="50%">
 </p>
+<table>
+  <tr>
+    <td><img src="assets/category_ar.png" width="50%"></td>
+    <td><img src="assets/category_en.png" width="50%"></td>
+  </tr>
+ </table>
 <br>
 
 
