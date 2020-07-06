@@ -7,6 +7,7 @@
 Finding the closest cafe while you are going to an interview will directly impact the interview outcome. Doing so will make you reach your destination on time and be respectful of interviewers' time. In addition, getting the caffeine that you need it to have full focus during the interview.
 
 ---
+<br>
 
 ## Solution Structure:
 
@@ -20,16 +21,17 @@ You can find quick comparison among them in this article [5 Powerful Alternative
 **Here we are going to use [TomTom api ](https://developer.tomtom.com/)**
 
 > TomTom API main features:
-- Pretty Maps.
-- Good satellite navigation.
-- Provide good functionality such as display maps, locations search, traffic density and route finding
-- Price:
-  - Free for 2,500 requests daily.
-  - $0.42–$0.50 for each subsequent 1,000
+  - Pretty Maps.
+  - Good satellite navigation.
+  - Provide good functionality such as display maps, locations search, traffic density and route finding
+  - Price:
+    - Free for 2,500 requests daily.
+    - $0.42–$0.50 for each subsequent 1,000
 
 Using TomTom maps we will provide app's users a pretty map that shows his current location. By providing the desired place category ex: cafe, car wash, etc. and destination location, the app will show all possible options for the selected category along his way.
 
 ---
+<br>
 
 ## App Components / Services Types:
 In this project, we are going to implement and provide following services:
@@ -39,10 +41,18 @@ In this project, we are going to implement and provide following services:
 
 ![lang](assets/lang.png)
 
-<!---<img src="assets/lang.png" width="400" height="150"> -->
+<br>
+
+<img src="assets/lang.png" width="50%" height="">
+
+<br>
+
+
 2. Main map shows current user's location and provides clicking feature on anywhere on map to get Longitude and Latitude.
 
 ![Map](assets/map.png)
+
+<br>
 
 3. Place category: You can choose the place category that you are looking for along your way. List of categories we cover in our app:
   - Café
@@ -62,6 +72,8 @@ In this project, we are going to implement and provide following services:
   - Mosque
 
 ![Alt Text](assets/category.png)
+
+<br>
 
 4. Find destination using Location (Latitude/Longitude): Using this service, you can find the shortest route to your destination by providing Location's latitude and longitude.
 
