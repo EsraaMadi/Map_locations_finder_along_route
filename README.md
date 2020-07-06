@@ -25,8 +25,8 @@ You can find quick comparison among them in this article [5 Powerful Alternative
   > - Good satellite navigation.
   > - Provide good functionality such as display maps, locations search, traffic density and route finding
   > - Price:
-    > - Free for 2,500 requests daily.
-    > - $0.42–$0.50 for each subsequent 1,000
+    > 1. Free for 2,500 requests daily.
+    2. $0.42–$0.50 for each subsequent 1,000
 
 Using TomTom maps we will provide app's users a pretty map that shows his current location. By providing the desired place category ex: cafe, car wash, etc. and destination location, the app will show all possible options for the selected category along his way.
 
@@ -57,38 +57,59 @@ In this project, we are going to implement and provide following services:
   >- Café
   >- Restaurant
   > - Fast Food
-  - Market
-  - Bakery
-  - Grocery Store
-  - Bank
-  - ATM
-  - Gas Station
-  - Hospital
-  - Car Wash		
-  - Post Office		
-  - Hotel	School
-  - Clothing Shop		
-  - Mosque
+  > - Market
+  > - Bakery
+  > - Grocery Store
+  > - Bank
+  >- ATM
+  >- Gas Station
+  >- Hospital
+  >- Car Wash		
+  >- Post Office		
+  >- Hotel	School
+  >- Clothing Shop		
+  >- Mosque
 
-![Alt Text](assets/category.png)
+<img src="assets/category.png" width="50%" height="">
 
 <br>
 
+
 4. Find destination using Location (Latitude/Longitude): Using this service, you can find the shortest route to your destination by providing Location's latitude and longitude.
 
-![Alt Text](assets/lat_lon.png)
+
+<img src="assets/lat_lon.png" width="50%" height="">
+
+<br>
+
+
 
 5. Find destination using Area Name: Using this service, you can find the shortest route to your destination by providing Area name.
 
-![Alt Text](assets/area.png)
+
+<img src="assets/area.png" width="50%" height="">
+
+<br>
+
+
 
 6. Max Detour time: After sepcfy both start and destination points, the app calculated the shortest route between them and highlight all possible places that belong to selected category with max detour time 3 minuits (this defualt value for detour time then you can change custmize to different value )
 
-![Alt Text](assets/detour_time.png)
+
+<img src="assets/detour_time.png" width="50%" height="">
+
+<br>
+
+
 
 7. Result section:
 
-![Alt Text](assets/route.png)
+
+<img src="assets/route.png" width="50%" height="">
+
+<br>
+
+
 
 
 By activating `yala` checkbox, the app will show the following information:
@@ -113,7 +134,12 @@ By activating `yala` checkbox, the app will show the following information:
   - Estimated distance.
   - Estimated arrival time
 
-![Alt Text](assets/res_side.png)
+
+<img src="assets/res_side.png" width="50%" height="">
+
+<br>
+
+
 ---
 
 ### Prerequisites
