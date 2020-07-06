@@ -167,7 +167,7 @@ pip3 install -r requirements.txt
 
 
 ### How Run The Services
-1. Run command on prerequisites section above.
+1. Run command on the prerequisites section above.
 2. Run streamlit script:
 ```
 streamlit run https://github.com/EsraaMadi/Map_locations_finder_along_route/blob/master/streamlit_app.py
@@ -180,7 +180,9 @@ streamlit run https://github.com/EsraaMadi/Map_locations_finder_along_route/blob
 
 - **Finding destination using Location (Latitude/Longitude):**
 
-![Alt Text](code/flask-app/static/images/app-demo1.gif)
+![Alt Text](https://drive.google.com/file/d/16op1emI_lKqMO12pvQ-LUvrsiik3KhD8/view?usp=sharing)
+
+
 
 - **Finding destination using Area Name**
 
