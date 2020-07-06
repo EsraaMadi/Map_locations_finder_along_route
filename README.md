@@ -54,7 +54,9 @@ In this project, we are going to implement and provide following services:
 
 <br>
 
-3. Place category: You can choose the place category that you are looking for along your way. List of categories we cover in our app:
+3. Place category: You can choose the place category that you are looking for along your way.
+
+> List of categories we cover in our app:
   - Café
   - Restaurant
   - Fast Food
