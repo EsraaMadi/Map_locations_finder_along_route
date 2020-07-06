@@ -72,15 +72,11 @@ In this project, we will implement and provide following services:
   >- Clothing Shop		
   >- Mosque
 
+
 <p align="center">
-  <img src="assets/category_ar.png" width="50%"><img src="assets/category_en.png" width="50%">
+  <img src="assets/category_ar.png" width="50%" style="border:10px;margin:0.2px"><img src="assets/category_en.png" width="50%" style="border:10px;margin:0.2px">
 </p>
-<table>
-  <tr>
-    <td><img src="assets/category_ar.png" width="50%"></td>
-    <td><img src="assets/category_en.png" width="50%"></td>
-  </tr>
- </table>
+
 <br>
 
 
