@@ -74,7 +74,7 @@ In this project, we will implement and provide following services:
 
 
 <p align="center">
-  <img src="assets/category_ar.png" width="50%" style="border:10px;margin:0.2px"><img src="assets/category_en.png" width="50%" style="border:10px;margin:0.2px">
+  <img src="assets/category_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;">  <img src="assets/category_en.png" width="40%">
 </p>
 
 <br>
