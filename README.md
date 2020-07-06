@@ -40,8 +40,9 @@ In this project, we are going to implement and provide following services:
   - Arabic
   - English
 
-<img src="assets/lang.png" width="50%" height="">
-
+<p align="center">
+  <img src="assets/lang.png" width="50%">
+</p>
 <br>
 
 
@@ -71,16 +72,18 @@ In this project, we are going to implement and provide following services:
   >- Clothing Shop		
   >- Mosque
 
-<img src="assets/category.png" width="50%" height="">
-
+<p align="center">
+  <img src="assets/category.png" width="50%">
+</p>
 <br>
 
 
 4. Find destination using Location (Latitude/Longitude): Using this service, you can find the shortest route to your destination by providing Location's latitude and longitude.
 
 
-<img src="assets/lat_lon.png" width="50%" height="">
-
+<p align="center">
+  <img src="assets/lat_lon.png" width="50%">
+</p>
 <br>
 
 
@@ -88,8 +91,9 @@ In this project, we are going to implement and provide following services:
 5. Find destination using Area Name: Using this service, you can find the shortest route to your destination by providing Area name.
 
 
-<img src="assets/area.png" width="50%" height="">
-
+<p align="center">
+  <img src="assets/area.png" width="50%">
+</p>
 <br>
 
 
@@ -97,8 +101,9 @@ In this project, we are going to implement and provide following services:
 6. Max Detour time: After sepcfy both start and destination points, the app calculated the shortest route between them and highlight all possible places that belong to selected category with max detour time 3 minuits (this defualt value for detour time then you can change custmize to different value )
 
 
-<img src="assets/detour_time.png" width="50%" height="">
-
+<p align="center">
+  <img src="assets/detour_time.png" width="50%">
+</p>
 <br>
 
 
@@ -106,8 +111,9 @@ In this project, we are going to implement and provide following services:
 7. Result section:
 
 
-<img src="assets/route.png" width="50%" height="">
-
+<p align="center">
+  <img src="assets/route.png" width="50%">
+</p>
 <br>
 
 
@@ -136,8 +142,9 @@ By activating `yala` checkbox, the app will show the following information:
   - Estimated arrival time
 
 
-<img src="assets/res_side.png" width="50%" height="">
-
+<p align="center">
+  <img src="assets/res_side.png" width="50%">
+</p>
 <br>
 
 
