@@ -1,6 +1,3 @@
-# run this script
-# streamlit run streamlit_app.py
-
 import folium
 from folium.plugins import BeautifyIcon
 import streamlit as st
@@ -10,7 +7,8 @@ from bs4 import BeautifulSoup
 import pickle
 import json
 from colour import Color
-
+import os
+from IPython.display import display
 #----------------------------------------------------------------------------#
 
 ### Define some paramters ###
@@ -21,8 +19,7 @@ with open('help_files/sa_regions.pkl', 'rb') as f:
 
 
 #  TomTom API key Setting
-with open('help_files/tomtomapikey.txt') as f:
-    api_key = f.readline()
+api_key = os.environ.get('tomtomapikey')
 
 # places category 
 # load saudi regions (En / AR)
@@ -30,11 +27,7 @@ with open('help_files/categories.pkl', 'rb') as f:
     places_cat_dict = pickle.load(f)
 places_cat_en = list(places_cat_dict.name.values)
 places_cat_ar  = list(places_cat_dict.name_ar.values)
-    
-# places_cat_en = [' coffee shop', 'bank', ' fast food', 'ambulance unit',' beauty salon',\
-#                  ' cinema', ' clinic', ' clothing shop',' dentist' ]
-# places_cat_ar = ["كوفي شوب" , "بنك" , "وجبات سريعة" , "وحدة إسعاف", "صالون تجميل" , \
-#                   "سينما" , "عيادة" , "محل ملابس" , "طبيب أسنان"]
+
 
 # app languages
 languages_lst = ["En", "العربية"]
@@ -140,8 +133,8 @@ def get_my_location(weights_warning, progress_bar):
     """
     A function to get my latitude, longitude, region code and city name
     """
-    with open('help_files/ipstackkey.txt') as f:
-        api_key_loc = f.readline()
+    
+    api_key_loc = os.environ.get('ipstackkey')
     
     # step 1: get my ip 
     ip_request = requests.get('https://get.geojs.io/v1/ip.json')
@@ -155,7 +148,7 @@ def get_my_location(weights_warning, progress_bar):
     geo_request = requests.get(f"http://api.ipstack.com/{my_ip}?access_key={api_key_loc}")
     geo_data = geo_request.json()
     
-    return [float(geo_data['latitude']), float(geo_data['longitude'])], int(geo_data['region_code']), geo_data['city']
+    return [float(geo_data['latitude']), float(geo_data['longitude'])], geo_data['region_code'], geo_data['city']
 
 #@st.cache(suppress_st_warning=True, hash_funcs={folium.Map: hash})
 def draw_route(points):
@@ -403,11 +396,10 @@ def main():
     # initialize a map and update progress bar
     map_ = init_map(latitude=my_location[0], longitude=my_location[1], layer = "hybrid")
     progress_bar.progress(.8)
-    map_box = st.markdown(map_._repr_html_(), unsafe_allow_html=True)
-#     map_.save("test.html")
-#     st.markdown('<iframe src="/test.html"> </iframe>', unsafe_allow_html =True)
-#     m = folium.Map([38.8934, -76.9470], tiles='stamentoner', zoom_start=12)
-#     st.markdown(m.repr_html(), unsafe_allow_html =True)
+    #map_box = st.markdown(map_._repr_html_(), unsafe_allow_html=True)
+    #map_box = st.write(map_._repr_html_(), unsafe_allow_html=True)
+    map_.save("test.html")
+    st.markdown('<iframe src="test.html"> </iframe>')
 
     # remove progress bar
     weights_warning.empty()

@@ -1,76 +1,108 @@
-# Get your place in your way using TomTom maps Api
+# Find Favorite Places Along your Route using TomTom Maps
 
 <br>
 
 ## Overview
 
-Finding closest cafe while your going to your interview will impact directly your interview outcome, since it make you reach your distination on time and have your body needed caffine to be full focus during interview
-
-<br>
-
-## Solution Structure:
-1. Preprocess the data to be in a format that could be provided for analyzer or indexer.
-2. [Hotel tone analyzer](https://github.com/EsraaMadi/Hotel-tone-analyzer/blob/master/code/Hotel%20Analyzer.ipynb):
-    - Use IBM Watson python lib to get tones for each review of hotels in our Datasets.
-    - For each hotel, calculate the normalized score for the detected tones, aggregate them all and get a final score.
-    - Show the final tones scores as a bar chart.
-3. [Hotel indexer](https://github.com/EsraaMadi/Hotel-tone-analyzer/blob/master/code/Hotel%20Indexer.ipynb):
-    - Create one document for each hotel that contains all hotel data plus obtained tones from IBM API.
-    - Use Elasticsearch to index all documents from the previous step.
-4. Provide the above two services as [web service](https://github.com/EsraaMadi/Hotel-tone-analyzer/tree/master/code/flask-app) using flask.
-
+Finding the closest cafe while you are going to an interview will directly impact the interview outcome. Doing so will make you reach your destination on time and be respectful of interviewers' time. In addition, getting the caffeine that you need it to have full focus during the interview.
 
 ---
-<br>
 
-- Google Maps was always the favorite for its geolocation services worldwide. although  their expansive database of geographical changes the fact the Google Maps API has for years been the go-to choice for developers.(copy past)
+## Solution Structure:
 
-- While looking for alternatives to Google Maps API, I’ve got many options for geolocation data such as: TomTom, Mapfit, OpenLayers, HERE and Mapbox
+Google Maps was the favorite and almost the single geolocation services worldwide for a long time.
+Especially for developers, Google Maps API has for years been the go-to choice, but their expansive database of geographical changes this fact and pushed them for looking for cheaper alternatives provide the same services.
 
-- You can find quick comparison among them in this article [5 Powerful Alternatives to Google Maps API](https://nordicapis.com/5-powerful-alternatives-to-google-maps-api/)
+For this app, I've found several viable alternatives to Google Maps API to get geolocation data, such as TomTom, Mapfit, OpenLayers, HERE and Mapbox
 
-- For this tutorial, we are going to use TomTom api
-#### [TomTom api ](https://developer.tomtom.com/)
-TomTom features:
+You can find quick comparison among them in this article [5 Powerful Alternatives to Google Maps API](https://nordicapis.com/5-powerful-alternatives-to-google-maps-api/)
+
+**Here we are going to use [TomTom api ](https://developer.tomtom.com/)**
+
+> TomTom API main features:
 - Pretty Maps.
 - Good satellite navigation.
 - Provide good functionality such as display maps, locations search, traffic density and route finding
-- Price: Free for 2,500 requests daily, $0.42–$0.50 for each subsequent 1,000
+- Price:
+  - Free for 2,500 requests daily.
+  - $0.42–$0.50 for each subsequent 1,000
 
-
-**Tone Analyzer** is a service determines the emotional tone behind a series of words, used to gain an understanding of the attitudes, opinions and emotions expressed within an online mention.
-
-
-Here we going to use one of common emotional or sentiment analysis APIs **IBM Tone Analyzer** to analysis text reviews of 1,000 hotels and get the total emotional tones for a hotel
-
-#### [IBM Tone Analyzer](https://www.ibm.com/watson/services/tone-analyzer/)
-is one of the cognitive services provided by IBM Cloud. It can help us predict the emotions, tones and communication style of the text written by users (passed as input to the service).
-
-To have an insight on the service and tones, try this [web interface](https://tone-analyzer-demo.ng.bluemix.net/).
+Using TomTom maps we will provide app's users a pretty map that shows his current location. By providing the desired place category ex: cafe, car wash, etc. and destination location, the app will show all possible options for the selected category along his way.
 
 ---
-<br>
 
-## Components / Services Types:
-In this project, we are going to implement and provide two services:
-1. Hotel tone analyzer:
-    - Using this service, you can pass a hotel name and get the normalized tone analysis for all its reviews. We cover these tones: anger, fear, joy, and sadness (emotional tones). analytical, confident, and tentative (language tones).
-2. Hotel indexer:
-    - By hitting this service, you can index all hotels data using Elasticsearch
+## App Components / Services Types:
+In this project, we are going to implement and provide following services:
+1. App languages:
+  - Arabic
+  - English
+
+![lang](assets/lang.png)
+
+<!---<img src="assets/lang.png" width="400" height="150"> -->
+2. Main map shows current user's location and provides clicking feature on anywhere on map to get Longitude and Latitude.
+
+![Map](assets/map.png)
+
+3. Place category: You can choose the place category that you are looking for along your way. List of categories we cover in our app:
+  - Café
+  - Restaurant
+  - Fast Food
+  - Market
+  - Bakery
+  - Grocery Store
+  - Bank
+  - ATM
+  - Gas Station
+  - Hospital
+  - Car Wash		
+  - Post Office		
+  - Hotel	School
+  - Clothing Shop		
+  - Mosque
+
+![Alt Text](assets/category.png)
+
+4. Find destination using Location (Latitude/Longitude): Using this service, you can find the shortest route to your destination by providing Location's latitude and longitude.
+
+![Alt Text](assets/lat_lon.png)
+
+5. Find destination using Area Name: Using this service, you can find the shortest route to your destination by providing Area name.
+
+![Alt Text](assets/area.png)
+
+6. Max Detour time: After sepcfy both start and destination points, the app calculated the shortest route between them and highlight all possible places that belong to selected category with max detour time 3 minuits (this defualt value for detour time then you can change custmize to different value )
+
+![Alt Text](assets/detour_time.png)
+
+7. Result section:
+
+![Alt Text](assets/route.png)
+
+By activating `yala` checkbox, the app will show the following informations:
+
+- Map section:
+  - Home point
+  - Destination point
+  - The shortest route between both points
+  - Returned places: have following features:
+    - Each place marker has a number indicate the order of the place based on its detour time.
+        - ex: the place with the shortest derout time will have number 1 then the second shortest place will have number 2 and so on.
+    - Each place marker has a different color and size, they repersent the place derout time
+        - ex: the place with the shortest derout time will have darkest color and bigger marker then the second shortest place be little bit lighter and smaller and so on.
+    - Each place has 2 popup windows:
+        1. Popup window that showup when pressing on the marker to give you location's information (name, full address) .
+        2. Popup window that showup when hovering over the marker to give you location's naem and derout time.
+
+![Alt Text](assets/res_map.png)
+
+- Side section: The app will show some informations about the calculated route to destination:
+  - Time you need to reach your destination.
+  - Estimated distance.
+  - Estimated arrival time
+
+![Alt Text](assets/res_side.png)
 ---
-<br>
-
-
-
-## Datasets
-The dataset used in this project is taken from this [Kaggle dataset](https://www.kaggle.com/datafiniti/hotel-reviews#7282_1.csv)
-
-This dataset is a list of about 1,000 hotels and 30,000 reviews. The dataset includes hotel location, name, rating, review data, title, username, and more.
-
-For more information about dataset columns, you can check this [data dictionary](https://developer.datafiniti.co/docs/business-data-schema)
-
-----
-<br>
 
 ### Prerequisites
 The requirements.txt file contains any Python dependencies. You can install them by running this command:
