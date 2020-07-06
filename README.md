@@ -79,25 +79,26 @@ In this project, we are going to implement and provide following services:
 
 ![Alt Text](assets/route.png)
 
-By activating `yala` checkbox, the app will show the following informations:
+
+By activating `yala` checkbox, the app will show the following information:
 
 - Map section:
-  - Home point
-  - Destination point
+  - Home point (blue marker)
+  - Destination point (red marker)
   - The shortest route between both points
-  - Returned places: have following features:
+  - (Rest of markers) that represent places belong to the selected category and these markers have the following features:
     - Each place marker has a number indicate the order of the place based on its detour time.
         - ex: the place with the shortest derout time will have number 1 then the second shortest place will have number 2 and so on.
-    - Each place marker has a different color and size, they repersent the place derout time
-        - ex: the place with the shortest derout time will have darkest color and bigger marker then the second shortest place be little bit lighter and smaller and so on.
+    - Each place marker has a different color and size, they represent the place derout time
+        - ex: the place with the shortest derout time will have the darkest color and bigger marker then the second shortest place be a little bit lighter and smaller and so on.
     - Each place has 2 popup windows:
         1. Popup window that showup when pressing on the marker to give you location's information (name, full address) .
-        2. Popup window that showup when hovering over the marker to give you location's naem and derout time.
+        2. Popup window that showup when hovering over the marker to give you location's name and derout time.
 
 ![Alt Text](assets/res_map.png)
 
-- Side section: The app will show some informations about the calculated route to destination:
-  - Time you need to reach your destination.
+- Side section: The app will show some information about the calculated route to the destination:
+  - The time you need to reach your destination.
   - Estimated distance.
   - Estimated arrival time
 
