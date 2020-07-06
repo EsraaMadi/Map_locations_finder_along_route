@@ -21,10 +21,10 @@ You can find quick comparison among them in this article [5 Powerful Alternative
 **Here we are going to use [TomTom api ](https://developer.tomtom.com/)**
 
 > TomTom API main features:
-  - Pretty Maps.
-  - Good satellite navigation.
-  - Provide good functionality such as display maps, locations search, traffic density and route finding
-  - Price:
+  > - Pretty Maps.
+  > - Good satellite navigation.
+  > - Provide good functionality such as display maps, locations search, traffic density and route finding
+  > - Price:
     - Free for 2,500 requests daily.
     - $0.42–$0.50 for each subsequent 1,000
 
@@ -38,10 +38,6 @@ In this project, we are going to implement and provide following services:
 1. App languages:
   - Arabic
   - English
-
-![lang](assets/lang.png)
-
-<br>
 
 <img src="assets/lang.png" width="50%" height="">
 
