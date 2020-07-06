@@ -25,8 +25,8 @@ You can find quick comparison among them in this article [5 Powerful Alternative
   > - Good satellite navigation.
   > - Provide good functionality such as display maps, locations search, traffic density and route finding
   > - Price:
-    - Free for 2,500 requests daily.
-    - $0.42–$0.50 for each subsequent 1,000
+    > - Free for 2,500 requests daily.
+    > - $0.42–$0.50 for each subsequent 1,000
 
 Using TomTom maps we will provide app's users a pretty map that shows his current location. By providing the desired place category ex: cafe, car wash, etc. and destination location, the app will show all possible options for the selected category along his way.
 
@@ -50,12 +50,13 @@ In this project, we are going to implement and provide following services:
 
 <br>
 
+
 3. Place category: You can choose the place category that you are looking for along your way.
 
 > List of categories we cover in our app:
-  - Café
-  - Restaurant
-  - Fast Food
+  >- Café
+  >- Restaurant
+  > - Fast Food
   - Market
   - Bakery
   - Grocery Store
