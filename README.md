@@ -74,7 +74,7 @@ In this project, we will implement and provide following services:
 
 
 <p align="center">
-  <img src="assets/category_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;">  <img src="assets/category_en.png" width="40%">
+  <img src="assets/category_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;"> OR  <img src="assets/category_en.png" width="40%">
 </p>
 
 <br>
@@ -84,7 +84,7 @@ In this project, we will implement and provide following services:
 
 
 <p align="center">
-  <img src="assets/lat_lon.png" width="50%">
+  <img src="assets/lat_lon_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;"> OR  <img src="assets/lat_lon_en.png" width="40%">
 </p>
 <br>
 
@@ -94,7 +94,7 @@ In this project, we will implement and provide following services:
 
 
 <p align="center">
-  <img src="assets/area.png" width="50%">
+  <img src="assets/area.png" width="40%">
 </p>
 <br>
 
@@ -104,7 +104,7 @@ In this project, we will implement and provide following services:
 
 
 <p align="center">
-  <img src="assets/detour_time.png" width="50%">
+  <img src="assets/detour_time_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;"> OR  <img src="assets/detour_time_en.png" width="40%">
 </p>
 <br>
 
@@ -114,7 +114,7 @@ In this project, we will implement and provide following services:
 
 
 <p align="center">
-  <img src="assets/route.png" width="50%">
+  <img src="assets/route_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;"> OR  <img src="assets/route_en.png" width="40%">
 </p>
 <br>
 
@@ -144,9 +144,9 @@ By activating `yala` checkbox, the app will show the following information:
   - Estimated arrival time
 
 
-<p align="center">
-  <img src="assets/res_side.png" width="50%">
-</p>
+  <p align="center">
+    <img src="assets/res_side_ar.png" width="40%" style="border-width=2px;border-color=black; border-style:solid;"> OR  <img src="assets/res_side_en.png" width="40%">
+  </p>
 <br>
 
 
