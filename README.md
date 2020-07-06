@@ -167,19 +167,21 @@ pip3 install -r requirements.txt
 
 
 ### How Run The Services
-1. Clone repo
-2. Run command on prerequisites section
-3. Run `export FLASK_APP=app.py`
-4. Run `flask run`
+1. Run command on prerequisites section above.
+2. Run streamlit script:
+```
+streamlit run https://github.com/EsraaMadi/Map_locations_finder_along_route/blob/master/streamlit_app.py
+```
+
 
 
 
 ### Services Demo
 
-- **Hotel Tone Analyzer**
+- **Finding destination using Location (Latitude/Longitude):**
 
 ![Alt Text](code/flask-app/static/images/app-demo1.gif)
 
-- **Hotel Indexer**
+- **Finding destination using Area Name**
 
 ![Alt Text](code/flask-app/static/images/app-demo2.gif)
