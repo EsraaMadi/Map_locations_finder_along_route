@@ -176,14 +176,21 @@ streamlit run https://github.com/EsraaMadi/Map_locations_finder_along_route/blob
 
 
 
-### Services Demo
+### Services Demos
 
 - **Finding destination using Location (Latitude/Longitude):**
 
-![Alt Text](https://drive.google.com/file/d/16op1emI_lKqMO12pvQ-LUvrsiik3KhD8/view?usp=sharing)
+![demo](assets/demo_1.gif)
+
+![demo](assets/demo_2.gif)
+
+![demo](assets/demo_3.gif)
 
 
+<br>
+<br>
+<br>
 
 - **Finding destination using Area Name**
 
-![Alt Text](code/flask-app/static/images/app-demo2.gif)
+![demo](assets/demo_4.gif)
