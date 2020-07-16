@@ -180,11 +180,11 @@ streamlit run https://github.com/EsraaMadi/Map_locations_finder_along_route/blob
 
 - **Finding destination using Location (Latitude/Longitude):**
 
-![demo](assets/demo_1.gif)
+![demo](assets/demo_11.gif)
 
-![demo](assets/demo_2.gif)
+![demo](assets/demo_22.gif)
 
-![demo](assets/demo_3.gif)
+![demo](assets/demo_33.gif)
 
 
 <br>
@@ -193,4 +193,4 @@ streamlit run https://github.com/EsraaMadi/Map_locations_finder_along_route/blob
 
 - **Finding destination using Area Name**
 
-![demo](assets/demo_4.gif)
+![demo](assets/demo_44.gif)
